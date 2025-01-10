@@ -11,7 +11,7 @@ const backbtn=document.querySelector("#backbtn")
 async function searchMovie(){
 const inputtextval=inputtext.value
 console.log("inputtextval",inputtextval);
-const url=`http://www.omdbapi.com/?apikey=${api_key}&s=${inputtextval}`
+const url=`https://www.omdbapi.com/?apikey=${api_key}&s=${inputtextval}`
 
 try{
     const responce= await fetch(url)
